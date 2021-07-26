@@ -1,0 +1,251 @@
+:root{
+    --white : #ffffff;
+    --black : #000000;
+    --gray-light : #f8f9fa;
+    --gray : #999999;
+    --gray-dark : #4a4a4b;
+    --green : #a2c0be;
+    --green-dark : #567876;
+    --orange : #ff9900;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container{
+    width:60%;
+    margin: auto;
+}
+
+/*Barre de navigation ======================================================================================*/
+
+header{
+    background-color: var(--gray-light);
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+header nav ul a{
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 2em;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.orange{
+    color: var(--orange);
+}
+
+/*Titre & slogan ======================================================================================*/
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/*ntch-child(2) Si on ne veut sélectionner qu'une 
+image parmi tant d'autres. 
+Ce qu'on appelle un sélecteur avancé.*/
+header section img {
+    width: 35%;
+}
+
+header section h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+header section p {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: var(--gray);
+}
+
+/*Section welcome ======================================================================================*/
+
+main .welcome {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+main .welcome h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main .welcome p {
+    margin: 0;
+    font-weight: lighter;
+    color: var(--gray);
+}
+
+/*Section 1 ======================================================================================*/
+
+main .card {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 50px 0;
+    align-items: center;
+    text-align: right;
+}
+
+main .card img {
+    width: 50%;
+    box-shadow: 10px 10px 0 var(--green); /*Pixel vers la droite, pixel vers le bas, effet de flou*/
+} /*Pixel vers la gauche et le haut, on marque un "-" après la valeur. Ex : -10 px*/
+
+main .card h3 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+main .card p {
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+main .card div {
+    width: 50%;
+}
+
+.btn {
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+    transition: background-color 500ms;
+}
+
+.btn:hover {
+    background-color: var(--black);
+    transition: background-color 500ms;
+}
+
+/*Section 2 ======================================================================================*/
+
+main .fearsome {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 50px 0;
+    align-items: center;
+    text-align: left;
+}
+
+main .fearsome img {
+    width: 50%;
+    box-shadow: 10px 10px 0 var(--green); /*Pixel vers la droite, pixel vers le bas, effet de flou*/
+} /*Pixel vers la gauche et le haut, on marque un "-" après la valeur. Ex : -10 px*/
+
+main .fearsome h3 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+main .fearsome p {
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+main .fearsome div {
+    width:50%
+}
+
+.btn2 {
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+    transition: background-color 500ms;
+}
+
+.btn2:hover {
+    background-color: var(--black);
+    transition: background-color 500ms;
+}
+
+/*Section 3 ======================================================================================*/
+
+main .beautiful {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 50px 0;
+    align-items: center;
+    text-align: right;
+}
+
+main .beautiful img {
+    width: 50%;
+    box-shadow: 10px 10px 0 var(--green); /*Pixel vers la droite, pixel vers le bas, effet de flou*/
+} /*Pixel vers la gauche et le haut, on marque un "-" après la valeur. Ex : -10 px*/
+
+main .beautiful h3 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+main .beautiful p {
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+main .beautiful div {
+    width: 50%;
+}
+
+.btn3 {
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+    transition: background-color 500ms;
+}
+
+.btn3:hover {
+    background-color: var(--black);
+    transition: background-color 500ms;
+}
+
+/*Pied de page ======================================================================================*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    height: 150px;
+    align-items: center;
+}
